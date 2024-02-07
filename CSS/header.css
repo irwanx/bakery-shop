@@ -1,62 +1,57 @@
-body{
-	margin:0;
-	display:flex;
+body {
+	margin: 0;
+	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	padding: 0;
 }
-.badan-utama
-{
+
+.badan-utama {
 	overflow: hidden;
 }
 
-header
-{	
-	background-image:linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
-	overflow:hidden;
+header {
+	background-image: linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
+	overflow: hidden;
 	color: #823919;
 }
 
-header h2
-{
-	margin-left:50px;
+header h2 {
+	margin-left: 50px;
 	font-family: Arial Black;
 	margin-bottom: 12px;
 	color: #823919;
 }
 
-header p 
-{
-	margin-left:55px;
+header p {
+	margin-left: 55px;
 	margin-bottom: 12px;
 	color: #823919;
 }
 
-.logo
-{
+.logo {
 	float: left;
 	width: 12%;
-	margin-right:20px;
+	margin-right: 20px;
 }
 
-.navigasi ul
-{
+.navigasi ul {
 	list-style-type: none;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
-	background-image:linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
+	background-image: linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
 	width: 100vw;
 	font-family: Arial;
 	font-size: 20px;
 	font-weight: bold;
 }
-.navigasi li
-{
-	float:left;
+
+.navigasi li {
+	float: left;
 }
-.navigasi li a
-{
+
+.navigasi li a {
 	color: #823919;
 	text-align: center;
 	padding: 20px;
@@ -64,14 +59,12 @@ header p
 	text-decoration: none;
 }
 
-.navigasi li a:hover
-{
+.navigasi li a:hover {
 	background-color: #e2c59b;
-	transition-duration:2s;	
+	transition-duration: 2s;
 }
 
-.konten
-{
+.konten {
 	height: 80vh;
 	background-image: url(../foto/uas2.JPEG);
 	background-size: cover;
@@ -80,49 +73,52 @@ header p
 	justify-content: center;
 	align-items: justify;
 	position: relative;
-	display:flex;
+	display: flex;
 	animation: slideBackground 15s linear infinite;
 }
 
 @keyframes slideBackground {
-  0% {
-    background-image: url(../foto/uas2.JPG);
-  }
-  33.33% {
-    background-image: url(../foto/11.JPG);
-  }
-  66.66% {
-    background-image: url(../foto/12.JPG);
-  }
-  100% {
-    background-image: url(../foto/13.JPG);
-  }
+	0% {
+		background-image: url(../foto/uas2.JPG);
+	}
+
+	33.33% {
+		background-image: url(../foto/11.JPG);
+	}
+
+	66.66% {
+		background-image: url(../foto/12.JPG);
+	}
+
+	100% {
+		background-image: url(../foto/13.JPG);
+	}
 }
 
-.konten:after
-{
-	background-color:rgba(0,0,0,.4);
-	content:"";
+.konten:after {
+	background-color: rgba(0, 0, 0, .4);
+	content: "";
 	display: block;
 	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
-.konten h1{
-	color:white;
+.konten h1 {
+	color: white;
 	margin: 0;
-	font-size:200%;
+	font-size: 200%;
 	font-family: Brush Script MT;
 	z-index: 1;
 	text-align: center;
 	margin-top: 30px;
 }
+
 .konten p {
 	color: white;
-	margin:0;
+	margin: 0;
 	margin-top: 10px;
 	font-size: 15px;
 	font-family: monospace;
@@ -138,6 +134,7 @@ header p
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .product {
 	text-align: center;
 }
@@ -164,7 +161,7 @@ header p
 }
 
 .promotion {
-	background-image:linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
+	background-image: linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
 	color: #823919;
 	padding: 10px;
 	border-radius: 8px;
@@ -172,74 +169,60 @@ header p
 
 .promotion h3 {
 	margin-top: 0;
-	text-align:center;
+	text-align: center;
 }
+
 .promotion p {
 	margin-top: 0;
-	text-align:center;
+	text-align: center;
 }
 
 .reviews-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .review {
-    width: 200px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
+	width: 200px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 8px;
 }
 
 .reviewer-info img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-right: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-right: 10px;
 }
 
 .reviewer-name {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .rating {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .star {
-    color: #ffc107;
+	color: #ffc107;
 }
 
 .review-text {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
-footer{
-	background-image:linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
+footer {
+	background-image: linear-gradient(to bottom right, white, #c8a37b, #faf8ec);
 	color: #823919;
 	text-align: center;
 	padding: 10px;
 	width: 100%;
-	
-}
-footer p{
-	margin : 5px;
+
 }
 
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
+footer p {
+	margin: 5px;
+}
